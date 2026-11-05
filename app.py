@@ -31,9 +31,8 @@ warnings.filterwarnings('ignore')
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 MODEL_DIR = os.path.join(BASE_DIR, 'model')
-DATA_DIR = os.path.join(BASE_DIR, 'data')
-DEFAULT_TEST_PATH = os.path.join(DATA_DIR, 'test_data.csv')
-FULL_DATA_PATH = os.path.join(DATA_DIR, 'diabetes_data_upload.csv')
+DEFAULT_TEST_PATH = os.path.join(BASE_DIR, 'test_data.csv')
+FULL_DATA_PATH = os.path.join(BASE_DIR, 'diabetes_full_data.csv')
 
 FEATURE_COLUMNS = [
     'Age',

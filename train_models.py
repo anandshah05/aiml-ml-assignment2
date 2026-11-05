@@ -35,9 +35,8 @@ from sklearn.tree import DecisionTreeClassifier
 warnings.filterwarnings('ignore')
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-DATA_DIR = os.path.join(BASE_DIR, 'data')
-DATA_PATH = os.path.join(DATA_DIR, 'diabetes_data_upload.csv')
-TEST_DATA_PATH = os.path.join(DATA_DIR, 'test_data.csv')
+DATA_PATH = os.path.join(BASE_DIR, 'diabetes_full_data.csv')
+TEST_DATA_PATH = os.path.join(BASE_DIR, 'test_data.csv')
 MODEL_DIR = os.path.join(BASE_DIR, 'model')
 
 FEATURE_COLUMNS = [
