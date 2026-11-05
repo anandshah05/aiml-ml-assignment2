@@ -33,6 +33,10 @@ symptom indicators.
 
 [https://github.com/anandshah05/aiml-ml-assignment2](https://github.com/anandshah05/aiml-ml-assignment2)
 
+## Streamlit Link
+
+[https://anand-bits-aiml-ml-assignment2.streamlit.app](https://anand-bits-aiml-ml-assignment2.streamlit.app)
+
 ### How to Run Locally
 
 ```bash
@@ -75,9 +79,9 @@ KNN                    | 0.9327     | 0.9697     | 0.9831     | 0.9062     | 0.9
 Naive Bayes            | 0.9423     | 0.9863     | 0.9677     | 0.9375     | 0.9524     | 0.8800
 Support Vector Machine | 0.9808     | **0.9973** | 0.9844     | **0.9844** | 0.9844     | 0.9594
 
-### Observations
+### Observations from Training
 
-| ML Model Name                     | Observation about model performance      |
+| Model Name                        | Observation                              |
 | --------------------------------- | ---------------------------------------- |
 | Logistic Regression               | Delivers strong results with `94.23%`    |
 :                                   : accuracy and high                        :
