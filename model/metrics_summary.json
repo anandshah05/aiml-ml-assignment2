@@ -1,0 +1,349 @@
+{
+  "dataset_name": "Early Stage Diabetes Risk Prediction Dataset (UCI)",
+  "total_samples": 520,
+  "train_samples": 416,
+  "test_samples": 104,
+  "feature_columns": [
+    "Age",
+    "Gender",
+    "Polyuria",
+    "Polydipsia",
+    "sudden weight loss",
+    "weakness",
+    "Polyphagia",
+    "Genital thrush",
+    "visual blurring",
+    "Itching",
+    "Irritability",
+    "delayed healing",
+    "partial paresis",
+    "muscle stiffness",
+    "Alopecia",
+    "Obesity"
+  ],
+  "target_column": "class",
+  "class_distribution": {
+    "Positive": 320,
+    "Negative": 200
+  },
+  "models": {
+    "Logistic Regression": {
+      "filename": "logistic_regression.joblib",
+      "Accuracy": 0.9423,
+      "AUC": 0.9902,
+      "Precision": 0.9833,
+      "Recall": 0.9219,
+      "F1": 0.9516,
+      "MCC": 0.8832,
+      "confusion_matrix": [
+        [
+          39,
+          1
+        ],
+        [
+          5,
+          59
+        ]
+      ],
+      "classification_report": {
+        "Negative (0)": {
+          "precision": 0.8863636363636364,
+          "recall": 0.975,
+          "f1-score": 0.9285714285714286,
+          "support": 40.0
+        },
+        "Positive (1)": {
+          "precision": 0.9833333333333333,
+          "recall": 0.921875,
+          "f1-score": 0.9516129032258065,
+          "support": 64.0
+        },
+        "accuracy": 0.9423076923076923,
+        "macro avg": {
+          "precision": 0.9348484848484848,
+          "recall": 0.9484375,
+          "f1-score": 0.9400921658986175,
+          "support": 104.0
+        },
+        "weighted avg": {
+          "precision": 0.9460372960372959,
+          "recall": 0.9423076923076923,
+          "f1-score": 0.9427507975895073,
+          "support": 104.0
+        }
+      },
+      "cv_5fold_mean": {
+        "Accuracy": 0.9288,
+        "AUC": 0.9761,
+        "Precision": 0.9474,
+        "Recall": 0.9375,
+        "F1": 0.942,
+        "MCC": 0.8513
+      },
+      "cv_5fold_std": {
+        "Accuracy": 0.0098,
+        "AUC": 0.0086,
+        "F1": 0.0072,
+        "MCC": 0.0221
+      }
+    },
+    "Decision Tree": {
+      "filename": "decision_tree.joblib",
+      "Accuracy": 0.9904,
+      "AUC": 0.9922,
+      "Precision": 1.0,
+      "Recall": 0.9844,
+      "F1": 0.9921,
+      "MCC": 0.98,
+      "confusion_matrix": [
+        [
+          40,
+          0
+        ],
+        [
+          1,
+          63
+        ]
+      ],
+      "classification_report": {
+        "Negative (0)": {
+          "precision": 0.975609756097561,
+          "recall": 1.0,
+          "f1-score": 0.9876543209876543,
+          "support": 40.0
+        },
+        "Positive (1)": {
+          "precision": 1.0,
+          "recall": 0.984375,
+          "f1-score": 0.9921259842519685,
+          "support": 64.0
+        },
+        "accuracy": 0.9903846153846154,
+        "macro avg": {
+          "precision": 0.9878048780487805,
+          "recall": 0.9921875,
+          "f1-score": 0.9898901526198114,
+          "support": 104.0
+        },
+        "weighted avg": {
+          "precision": 0.9906191369606004,
+          "recall": 0.9903846153846154,
+          "f1-score": 0.9904061137656939,
+          "support": 104.0
+        }
+      },
+      "cv_5fold_mean": {
+        "Accuracy": 0.9673,
+        "AUC": 0.9688,
+        "Precision": 0.9842,
+        "Recall": 0.9625,
+        "F1": 0.973,
+        "MCC": 0.9326
+      },
+      "cv_5fold_std": {
+        "Accuracy": 0.0156,
+        "AUC": 0.0136,
+        "F1": 0.0131,
+        "MCC": 0.0319
+      }
+    },
+    "KNN": {
+      "filename": "knn.joblib",
+      "Accuracy": 0.9327,
+      "AUC": 0.9697,
+      "Precision": 0.9831,
+      "Recall": 0.9062,
+      "F1": 0.9431,
+      "MCC": 0.8653,
+      "confusion_matrix": [
+        [
+          39,
+          1
+        ],
+        [
+          6,
+          58
+        ]
+      ],
+      "classification_report": {
+        "Negative (0)": {
+          "precision": 0.8666666666666667,
+          "recall": 0.975,
+          "f1-score": 0.9176470588235294,
+          "support": 40.0
+        },
+        "Positive (1)": {
+          "precision": 0.9830508474576272,
+          "recall": 0.90625,
+          "f1-score": 0.943089430894309,
+          "support": 64.0
+        },
+        "accuracy": 0.9326923076923077,
+        "macro avg": {
+          "precision": 0.9248587570621469,
+          "recall": 0.940625,
+          "f1-score": 0.9303682448589192,
+          "support": 104.0
+        },
+        "weighted avg": {
+          "precision": 0.9382877009995655,
+          "recall": 0.9326923076923077,
+          "f1-score": 0.9333039031747783,
+          "support": 104.0
+        }
+      },
+      "cv_5fold_mean": {
+        "Accuracy": 0.9135,
+        "AUC": 0.9855,
+        "Precision": 0.9699,
+        "Recall": 0.8875,
+        "F1": 0.9262,
+        "MCC": 0.8282
+      },
+      "cv_5fold_std": {
+        "Accuracy": 0.0202,
+        "AUC": 0.011,
+        "F1": 0.0186,
+        "MCC": 0.0358
+      }
+    },
+    "Naive Bayes": {
+      "filename": "naive_bayes.joblib",
+      "Accuracy": 0.9423,
+      "AUC": 0.9863,
+      "Precision": 0.9677,
+      "Recall": 0.9375,
+      "F1": 0.9524,
+      "MCC": 0.88,
+      "confusion_matrix": [
+        [
+          38,
+          2
+        ],
+        [
+          4,
+          60
+        ]
+      ],
+      "classification_report": {
+        "Negative (0)": {
+          "precision": 0.9047619047619048,
+          "recall": 0.95,
+          "f1-score": 0.926829268292683,
+          "support": 40.0
+        },
+        "Positive (1)": {
+          "precision": 0.967741935483871,
+          "recall": 0.9375,
+          "f1-score": 0.9523809523809523,
+          "support": 64.0
+        },
+        "accuracy": 0.9423076923076923,
+        "macro avg": {
+          "precision": 0.9362519201228878,
+          "recall": 0.94375,
+          "f1-score": 0.9396051103368177,
+          "support": 104.0
+        },
+        "weighted avg": {
+          "precision": 0.9435188467446533,
+          "recall": 0.9423076923076923,
+          "f1-score": 0.9425533815777718,
+          "support": 104.0
+        }
+      },
+      "cv_5fold_mean": {
+        "Accuracy": 0.8865,
+        "AUC": 0.9559,
+        "Precision": 0.9004,
+        "Recall": 0.9187,
+        "F1": 0.9084,
+        "MCC": 0.7628
+      },
+      "cv_5fold_std": {
+        "Accuracy": 0.0165,
+        "AUC": 0.0094,
+        "F1": 0.0158,
+        "MCC": 0.0334
+      }
+    },
+    "Support Vector Machine": {
+      "filename": "svm.joblib",
+      "Accuracy": 0.9808,
+      "AUC": 0.9973,
+      "Precision": 0.9844,
+      "Recall": 0.9844,
+      "F1": 0.9844,
+      "MCC": 0.9594,
+      "confusion_matrix": [
+        [
+          39,
+          1
+        ],
+        [
+          1,
+          63
+        ]
+      ],
+      "classification_report": {
+        "Negative (0)": {
+          "precision": 0.975,
+          "recall": 0.975,
+          "f1-score": 0.975,
+          "support": 40.0
+        },
+        "Positive (1)": {
+          "precision": 0.984375,
+          "recall": 0.984375,
+          "f1-score": 0.984375,
+          "support": 64.0
+        },
+        "accuracy": 0.9807692307692307,
+        "macro avg": {
+          "precision": 0.9796875,
+          "recall": 0.9796875,
+          "f1-score": 0.9796875,
+          "support": 104.0
+        },
+        "weighted avg": {
+          "precision": 0.9807692307692307,
+          "recall": 0.9807692307692307,
+          "f1-score": 0.9807692307692307,
+          "support": 104.0
+        }
+      },
+      "cv_5fold_mean": {
+        "Accuracy": 0.9731,
+        "AUC": 0.9952,
+        "Precision": 0.9784,
+        "Recall": 0.9781,
+        "F1": 0.9782,
+        "MCC": 0.9434
+      },
+      "cv_5fold_std": {
+        "Accuracy": 0.0094,
+        "AUC": 0.004,
+        "F1": 0.0075,
+        "MCC": 0.02
+      }
+    }
+  },
+  "multinomial_nb_comparison": {
+    "Accuracy": 0.9519,
+    "AUC": 0.9891,
+    "Precision": 0.9836,
+    "Recall": 0.9375,
+    "F1": 0.96,
+    "MCC": 0.9015,
+    "confusion_matrix": [
+      [
+        39,
+        1
+      ],
+      [
+        4,
+        60
+      ]
+    ]
+  }
+}
