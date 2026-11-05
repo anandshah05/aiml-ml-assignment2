@@ -31,7 +31,7 @@ symptom indicators.
 
 ## Github Repository Link
 
-[https://github.com/anandsha/ml-assignment-2](https://github.com/anandsha/ml-assignment-2)
+[https://github.com/anandshah05/aiml-ml-assignment2](https://github.com/anandshah05/aiml-ml-assignment2)
 
 ### How to Run Locally
 
