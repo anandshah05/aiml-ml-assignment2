@@ -83,32 +83,9 @@ Support Vector Machine | 0.9808     | **0.9973** | 0.9844     | **0.9844** | 0.9
 
 | Model Name                        | Observation                              |
 | --------------------------------- | ---------------------------------------- |
-| Logistic Regression               | Delivers strong results with `94.23%`    |
-:                                   : accuracy and high                        :
-:                                   : precision.<br>Identifies clear symptoms  :
-:                                   : well, but misses a few cases with        :
-:                                   : complex symptom combinations.            :
-| Decision Tree                     | Best performing model with `99.04%`      |
-:                                   : accuracy and zero false                  :
-:                                   : positives.<br>Simple if-else decision    :
-:                                   : rules match the yes/no symptom questions :
-:                                   : perfectly.                               :
-| KNN                               | Achieves `93.27%` accuracy, ranking lowest |
-:                                   : among the five models.<br>Treating all   :
-:                                   : symptoms equally allows less important   :
-:                                   : symptoms to reduce accuracy.             :
-| Naive Bayes                       | Delivers fast and reliable results with  |
-:                                   : `94.23%` accuracy and good                 :
-:                                   : recall.<br>Assuming symptoms are         :
-:                                   : independent leads to a few false alarms  :
-:                                   : when symptoms overlap.                   :
-| Support Vector Machine            | Outstanding performance with `98.08%`    |
-:                                   : accuracy and the highest AUC score of    :
-:                                   : `0.9973`.<br>Accurately separates positive :
-:                                   : and negative cases even with complex     :
-:                                   : symptom patterns.                        :
-| Overall, Winner for your dataset? | Decision Tree is the overall winner with |
-:                                   : `99.04%` accuracy and near-perfect       :
-:                                   : predictions.<br>Support Vector Machine   :
-:                                   : is a close runner-up with the best       :
-:                                   : probability ranking.                     :
+| Logistic Regression               | Delivers strong results with `94.23%` accuracy and high precision.<br>Identifies clear symptoms well, but misses a few cases with complex symptom combinations.                                                  |
+| Decision Tree                     | Best performing model with `99.04%` accuracy and zero false positives.<br>Simple if-else decision rules match the yes/no symptom questions perfectly.                                                           |
+| KNN                               | Achieves `93.27%` accuracy, ranking lowest among the five models.<br>Treating all symptoms equally allows less important symptoms to reduce accuracy.                                                   |
+| Naive Bayes                       | Delivers fast and reliable results with `94.23%` accuracy and good recall.<br>Assuming symptoms are independent leads to a few false alarms when symptoms overlap.                                            |
+| Support Vector Machine            | Outstanding performance with `98.08%` accuracy and the highest AUC score of `0.9973`.<br>Accurately separates positive and negative cases even with complex symptom patterns.                        |
+| Overall, Winner for your dataset? | Decision Tree is the overall winner with `99.04%` accuracy and near-perfect predictions.<br>Support Vector Machine is a close runner-up with the best probability ranking.                     |
